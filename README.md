@@ -9,9 +9,9 @@ No trabalho dessa semana vamos alterar o projeto para que a responsividade da ho
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
+- Nome: Anna Luiza Pereira Silva
+- Matricula:1656540
+- Proposta de projeto escolhida: Projeto 4(exposicao das pecas)
 - Breve descrição sobre seu projeto:
 
 ## Print da versão responsiva com Bootstrap [DESKTOP]
