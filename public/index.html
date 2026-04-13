@@ -1,97 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog da Anna</title>
-    <link rel="stylesheet" href="style.css" >
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+
+<body class="bg-light">
+
 <!-- HEADER -->
-<header class="header">
-    <h1 class="logo">Fashionblog</h1> 
-
-    <nav class="menu">
-        <a href="#">Home</a>
-        <a href="#">Looks</a>
-        <a href="#">Tendências</a>
-        <a href="#">Reviews</a>
-        <a href="#">Blog</a>
-        
-    </nav>
+<header class="bg-danger text-white p-3">
+    <div class="container d-flex justify-content-between align-items-center">
+        <h1 class="h3">FashionBlog</h1>
+        <nav>
+            <a href="#" class="text-white me-3">Home</a>
+            <a href="#" class="text-white me-3">Looks</a>
+            <a href="#" class="text-white me-3">Tendências</a>
+            <a href="#" class="text-white">Reviews</a>
+        </nav>
+    </div>
 </header>
-<!-- MAIN CONTAINER -->
-<div class="col-12 col-md-6 col-lg-4"></div>
 
-    <!-- MAIN -->
-    <main class="main">
+<!-- CONTAINER PRINCIPAL -->
+<div class="container my-4 bg-white p-4 rounded shadow">
+    <div class="row">
 
-        <!-- BANNER -->
-        <section class="banner">
-            <img src="fashion_studio.png">
-        </section>
+        <!-- MAIN -->
+        <main class="col-lg-8">
 
-        <!-- BLOG INTRO -->
-        <section class="intro">
-            <h2>Tudo que você precisa saber</h2>
-            <p>A moda vai muito além de roupas — ela é uma forma de expressão, atitude e identidade. 
-Aqui no Fashion Blog, você encontra inspirações, tendências e dicas para criar looks 
-que combinam com o seu estilo e com o seu dia a dia.</p>
-        </section>
+            <!-- BANNER -->
+            <img src="fashion_studio.png" class="img-fluid mb-4 rounded">
 
-        <!-- IMAGES GRID -->
-        <section class="gallery">
-            <article><img src="inspo3.jpg"></article>
-            <article><img src="look2.jpg" width="80px"></article>
-            <article><img src="marrom.jpg" width="80px"></article>
-        </section>
+            <!-- INTRO -->
+            <section class="mb-4">
+                <h2 class="border-bottom border-danger pb-2">Tudo que você precisa saber</h2>
+                <p>
+                    A moda vai muito além de roupas — ela é uma forma de expressão, atitude e identidade.
+                    Aqui no Fashion Blog, você encontra inspirações, tendências e dicas para criar looks
+                    que combinam com o seu estilo.
+                </p>
+            </section>
+
+            <!-- CARDS -->
+            <section class="row">
+
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="inspo3.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger">Inspiração</h5>
+                            <p class="card-text">Ideias de looks modernos para o dia a dia.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="look2.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger">Looks</h5>
+                            <p class="card-text">Combinações elegantes com peças simples.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="marrom.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger">Tendências</h5>
+                            <p class="card-text">O que está em alta no mundo da moda.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
         </main>
 
-    <!-- SIDEBAR -->
-    <aside class="sidebar">
+        <!-- SIDEBAR -->
+        <aside class="col-lg-4">
 
-        <!-- NEWS -->
-        <section class="box">
-            <h3>MODA</h3>
-           <p>Como montar um look elegante com peças básicas</p>
-           <p>Nova tendência aposta em tons neutros e minimalismo</p>
-           <p>Marcas investem cada vez mais em moda sustentável</p>
-        </section>
-
-        <!-- SOCIAL -->
-        <section class="box">
-            <h3>Fique por dentro das novidades com a gente!</h3>
-            <div class="social">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+            <div class="card mb-4 shadow-sm">
+                <div class="card-body">
+                    <h4 class="text-danger">Moda</h4>
+                    <p>Como montar um look elegante</p>
+                    <p>Tendência de tons neutros</p>
+                    <p>Moda sustentável</p>
+                </div>
             </div>
-        </section>
-         <!-- POST -->
-        <section class="box">
-            <img src="inicial.jpg">
-            <p>
-Encontrar o seu estilo pessoal é um processo que vai além de tendências passageiras. É sobre entender o que faz você se sentir bem, confiante e autêntica. Peças básicas podem se transformar completamente com os acessórios certos, enquanto combinações simples podem ganhar destaque com pequenos detalhes. A moda permite que você explore diferentes versões de si mesma, sem medo de ousar e sem limites para a criatividade.
-</p>
 
+            <div class="card mb-4 shadow-sm">
+                <div class="card-body">
+                    <h4 class="text-danger">Novidades</h4>
+                    <p>Siga nossas redes sociais</p>
+                </div>
+            </div>
 
-        </section>
+            <div class="card shadow-sm">
+                <img src="inicial.jpg" class="card-img-top">
+                <div class="card-body">
+                    <p>
+                        Encontrar seu estilo pessoal é um processo que vai além de tendências.
+                    </p>
+                </div>
+            </div>
 
-        <!-- CTA -->
-        <section class="cta">
-            <p>Vista-se para impressionar… você mesma.</p>
-        </section>
+        </aside>
 
-    </aside>
-
+    </div>
 </div>
 
 <!-- FOOTER -->
-<footer class="footer">
+<footer class="bg-danger text-white text-center p-3">
     <p>2026 Fashion Blog</p>
 </footer>
 
-    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
